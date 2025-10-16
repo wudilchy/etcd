@@ -1,0 +1,6 @@
+steps:
+- name: "gcr.io/cloud-builders/docker"
+  args: ["build", "-t", "gcr.io/apt-quarter-472601-j4/github.com/wudilchy/etcd:$COMMIT_SHA", "."]
+images:
+- "gcr.io/apt-quarter-472601-j4/github.com/wudilchy/etcd:$COMMIT_SHA"
+logsBucket: "unisoc_test_bucket"
